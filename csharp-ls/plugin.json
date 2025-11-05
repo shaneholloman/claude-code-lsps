@@ -1,0 +1,12 @@
+{
+  "name": "csharp-ls",
+  "version": "0.1.0",
+  "description": "Roslyn-based C# language server",
+  "author": {
+    "name": "Piebald LLC",
+    "email": "support@piebald.ai"
+  },
+  "repository": "https://github.com/razzmatazz/csharp-language-server",
+  "license": "MIT",
+  "keywords": ["csharp", "c#", "dotnet", "lsp", "language-server"]
+}

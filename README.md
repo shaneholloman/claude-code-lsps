@@ -44,7 +44,8 @@ Here's a screenshot:
 
 You need to install various components in order for the plugins to use them:
 
-### Rust
+<details>
+<summary>Rust</summary>
 
 Uses `rust-analyzer`, the official modern Rust Language Server and the same one used by the official VS Code extension.  If you have `rustup`, installing `rust-analyzer` is easy:
 
@@ -54,7 +55,10 @@ rustup component add rust-analyzer
 
 The `rust-analyzer` executable needs to be in your PATH.
 
-### JavaScript/TypeScript
+</details>
+
+<details>
+<summary>JavaScript/TypeScript</summary>
 
 Install the `typescript-language-server` and `typescript` packages globally:
 ```bash
@@ -68,6 +72,160 @@ pnpm install -g typescript-language-server typescript
 bun install -g typescript-language-server typescript
 ```
 Make sure the `typescript-language-server` executable is in your PATH.
+
+</details>
+
+<details>
+<summary>Python</summary>
+
+We recommend **pyright** for its speed and excellent type checking:
+```bash
+# npm
+npm install -g pyright
+
+# pnpm
+pnpm install -g pyright
+
+# bun
+bun install -g pyright
+```
+
+Alternative: **python-lsp-server** (pure Python, no Node.js required):
+```bash
+pip install python-lsp-server
+```
+
+</details>
+
+<details>
+<summary>Go</summary>
+
+Install **gopls**, the official Go language server:
+```bash
+go install golang.org/x/tools/gopls@latest
+```
+Make sure your Go bin directory is in your PATH (usually `~/go/bin`).
+
+</details>
+
+<details>
+<summary>Java</summary>
+
+Install **Eclipse JDT Language Server** (jdtls). Requires Java 21+ runtime:
+```bash
+# Download from official sources
+# Latest snapshot:
+curl -LO http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz
+mkdir -p ~/jdtls
+tar -xzf jdt-language-server-latest.tar.gz -C ~/jdtls
+
+# Or install via package manager (varies by OS)
+# macOS with Homebrew:
+brew install jdtls
+```
+
+Set `JAVA_HOME` environment variable to Java 21+ installation.
+
+</details>
+
+<details>
+<summary>C/C++</summary>
+
+Install **clangd**, the official LLVM-based language server:
+```bash
+# macOS
+brew install llvm
+
+# Ubuntu/Debian
+sudo apt-get install clangd
+
+# Arch Linux
+sudo pacman -S clang
+
+# Or download from LLVM releases
+# https://github.com/clangd/clangd/releases
+```
+
+Alternative: **ccls** (better semantic highlighting):
+```bash
+# macOS
+brew install ccls
+
+# Ubuntu/Debian
+sudo apt-get install ccls
+```
+
+</details>
+
+<details>
+<summary>PHP</summary>
+
+Install **Intelephense** (recommended, freemium):
+```bash
+# npm
+npm install -g intelephense
+
+# pnpm
+pnpm install -g intelephense
+```
+
+Alternative: **Phpactor** (fully open source):
+```bash
+# Via Composer
+composer global require phpactor/phpactor
+```
+
+</details>
+
+<details>
+<summary>Ruby</summary>
+
+Install **ruby-lsp** (modern, recommended):
+```bash
+gem install ruby-lsp
+```
+
+Alternative: **Solargraph** (mature):
+```bash
+gem install solargraph
+```
+
+</details>
+
+<details>
+<summary>C#</summary>
+
+Install **csharp-ls** (recommended, requires .NET 9 SDK):
+```bash
+dotnet tool install --global csharp-ls
+```
+
+Alternative: **OmniSharp** (traditional, has some stability issues):
+```bash
+# Download from releases
+# https://github.com/OmniSharp/omnisharp-roslyn/releases
+```
+
+</details>
+
+<details>
+<summary>HTML/CSS</summary>
+
+Install **vscode-langservers-extracted** for both HTML and CSS:
+```bash
+# npm
+npm install -g vscode-langservers-extracted
+
+# pnpm
+pnpm install -g vscode-langservers-extracted
+
+# bun
+bun install -g vscode-langservers-extracted
+```
+
+This provides `vscode-html-language-server` and `vscode-css-language-server` executables.
+
+</details>
 
 
 

@@ -1,0 +1,26 @@
+{
+    "cpp": {
+        "command": "clangd",
+        "args": [],
+        "languages": [
+            "c",
+            "cpp"
+        ],
+        "fileExtensions": [
+            ".c",
+            ".cpp",
+            ".cc",
+            ".cxx",
+            ".c++",
+            ".h",
+            ".hpp",
+            ".hh",
+            ".hxx",
+            ".h++"
+        ],
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}

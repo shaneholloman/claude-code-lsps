@@ -1,0 +1,16 @@
+{
+    "java": {
+        "command": "jdtls",
+        "args": [],
+        "languages": [
+            "java"
+        ],
+        "fileExtensions": [
+            ".java"
+        ],
+        "transport": "stdio",
+        "initializationOptions": {},
+        "settings": {},
+        "maxRestarts": 3
+    }
+}
