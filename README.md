@@ -1,6 +1,6 @@
 # Claude Code LSPs
 
-This repository contains a [Claude Code marketplace](...) with plugins that offer LSP servers for TypeScript, Rust, X, Y, Z.  [LSP servers]() provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
+This repository contains a [Claude Code marketplace](...) with plugins that offer LSP servers for TypeScript, Rust, Python, Go, Java, C/C++, PHP, Ruby, C#, and HTML/CSS.  [LSP servers]() provide powerful and familiar code intelligence features to IDEs, and now Claude Code directly.
 
 [**Claude Code is going to officially support LSP soon.**](linktoreddit)  In 2.0.30 (October 31st) they adding the working beginnings of a system to run LSP servers from plugins automatically on startup, and an `LSP` tool (enable via `$ENABLE_LSP_TOOL=1`) that Claude can use to
 - Go to the definition for symbols (`goToDefinition`)
