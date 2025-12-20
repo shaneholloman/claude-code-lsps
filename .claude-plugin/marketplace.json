@@ -195,6 +195,23 @@
         "name": "Piebald LLC",
         "email": "support@piebald.ai"
       }
+    },
+    {
+      "name": "kotlin-lsp",
+      "version": "0.1.0",
+      "source": "./kotlin-lsp",
+      "description": "Kotlin language server by JetBrains",
+      "category": "development",
+      "tags": [
+        "kotlin",
+        "lsp",
+        "language-server",
+        "jetbrains"
+      ],
+      "author": {
+        "name": "Piebald LLC",
+        "email": "support@piebald.ai"
+      }
     }
   ]
 }
